@@ -31,12 +31,8 @@ def get_customers_from_file(customer_file_path):
         customer_data = line.strip().split("|")
         name, email, street, city, zipcode = customer_data
 
-        new_customer = Customer(name,
-                                email,
-                                street,
-                                city,
-                                zipcode)
+        new_customer = Customer(name, email, street, city, zipcode)
 
         customers.append(new_customer)
-
-    return customers
+    
+    return (customers)
